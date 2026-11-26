@@ -2,3 +2,8 @@ language: en-US
 reviews:
   auto_approvals:
     enabled: true
+  pre_merge_checks:
+    override_requested_reviewers_only: true
+    title:
+      mode: "error"
+      requirements: "Must start with an imperative verb and be under 50 characters."
